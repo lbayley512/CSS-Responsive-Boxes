@@ -1,3 +1,59 @@
 body {
   background: blanchedalmond;
 }
+div{
+  outline: 1px solid black;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.a{
+  margin-bottom: 20px;
+}
+
+.c{
+  margin-top: 20px;
+}
+.a, .c{
+  display: flex;
+  height: 20vh;
+}
+.b {
+  display: flex;
+  height: 60vh;
+  
+}
+
+@media(min-width: 600px){
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+    justify-content: space-between;
+  }
+  .a{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+  }
+
+  .c{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    height: 60vh;
+    flex-wrap: wrap;
+  }
+  .b{
+    display: flex;
+    width: 76vw;
+    flex-wrap: wrap;
+    
+  }
+}
